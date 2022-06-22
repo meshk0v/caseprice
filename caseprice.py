@@ -1,7 +1,7 @@
 import telebot
 from telebot import types
 
-bot = telebot.TeleBot('')
+bot = telebot.TeleBot('5509097143:AAFsWka6sbFz0WpOVSkQOO2us4h1q_vSUG8')
 
 @bot.message_handler(commands = ["start"])
 def start(message):
@@ -53,7 +53,7 @@ def callback_inline(call):
 		markup.add(item4)
 		markup.add(item5)
 		markup.add(back)
-		bot.edit_message_text(chat_id = call.message.chat.id, message_id = call.message.message_id, text = "Махач Гаджиев (ВИДЕОГРАФ) Монтировал курс, монтировал рилс, монтировал ролики для ютую", reply_markup = markup)
+		bot.edit_message_text(chat_id = call.message.chat.id, message_id = call.message.message_id, text = "Махач Гаджиев (ВИДЕОГРАФ) Монтировал для него уроки для курса, REELS , а также видео для Youtube", reply_markup = markup)
 
 	elif call.data == "case2":
 		markup = types.InlineKeyboardMarkup()
